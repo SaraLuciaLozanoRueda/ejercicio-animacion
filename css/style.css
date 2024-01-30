@@ -1,0 +1,131 @@
+
+
+.nube{
+    position: fixed;
+    bottom: 70%;
+    width:300px;
+    right: 0;
+    animation-name:si;
+    animation-duration:15s;
+    animation-delay:12s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-name: nube;
+}
+@keyframes nube{
+    0%{
+        opacity: 100%;
+        right: 0;
+    }
+    50%{
+        opacity: 100%;
+        right:800px;
+    }
+    100%{
+        opacity: 0%;
+        left: 800px;
+    }
+}
+
+.sol{
+    position: absolute;
+    right: 350px;
+    bottom: 75%;
+    width:200px;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-fill-mode:forwards;
+    animation-name: move-sun;
+}
+@keyframes move-sun{
+    50%{
+        opacity: 40%;
+    }
+}
+
+.mensajes{
+    position: absolute;
+    left: 50rem;
+    bottom: 35%;
+    width:250px;
+    height:250px;
+    animation-duration:2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    opacity: 0%;
+    animation-name: accion
+}
+.mensajes:nth-child(4){
+    animation-delay:8s;
+}
+.mensajes:nth-child(3){
+    animation-delay:4s;
+}
+.mensajes:nth-child(2){
+    animation-delay:2s;
+}
+.mensajes:nth-child(1){
+    animation-delay:1s;
+}
+@keyframes accion{
+    0%{
+        opacity: 0%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.agua{
+    position: fixed;
+    width:200px;
+    left: 45%;
+    top: 0;
+    opacity: 0%;
+    animation-name: accion;
+    animation-duration:5s;
+    animation-delay:20s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-name: aguita;
+}
+@keyframes aguita{
+    0%{
+        opacity: 50%;
+        top: 0;
+    }
+    50%{
+        opacity: 100%;
+    }
+    100%{
+        top: 800px;
+    }
+}
+
+.flor{
+    position: absolute;
+    left: 47%;
+    width: 200px;
+    animation-name:accion;
+    animation-duration:10s;
+    animation-delay:25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-name: flor;
+}
+@keyframes flor{
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 20px;
+    }
+}
